@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.button {
+  @apply relative inline-block p-[4px] border-[#9999999C] border-[1px] duration-400;
+}
+
+.button-container {
+  @apply flex justify-center items-center gap-x-[8px] py-[16px] px-[40px] bg-[#FFFFFF0F] border-[#999999] border-[1px] rounded-[44px] cursor-pointer;
+}
+
+.button-container-text {
+  @apply text-white font-['Raleway'] font-normal uppercase;
+}

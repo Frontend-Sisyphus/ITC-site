@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.footer {
+  @apply flex justify-between items-start mt-[56px] pb-[83px] px-[120px] w-full;
+}
+
+.footer-left {
+  @apply grid gap-y-[26px];
+}
+
+.footer-left-logoContainer {
+  @apply flex items-end gap-x-[24px];
+}
+
+.footer-left-logoContainer > img:first-child {
+  @apply w-[132px] h-[66px];
+}
+
+.footer-left-logoContainer > img:last-child {
+  @apply w-[66px] h-[66px];
+}
+
+.footer-left-linksContainer {
+  @apply grid gap-y-[8px];
+}
+
+.footer-left-linksContainer-link {
+  @apply text-[#ffffff] text-[18px] text-left font-['Raleway'] underline duration-400 ease-in-out;
+}
+
+.footer-left-linksContainer-link:hover {
+  @apply text-[#38aaff];
+}
+
+.footer-copyright {
+  @apply self-end text-[#ffffff] text-[18px] text-center font-['Raleway'] font-normal;
+}
+
+.footer-right {
+  @apply grid justify-items-end gap-y-[8px];
+}
