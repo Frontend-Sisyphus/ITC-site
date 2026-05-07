@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+.header {
+  @apply relative flex justify-end items-center gap-x-[84px] pt-[20px] pr-[120px] w-full h-[53px] bg-transparent;
+}
+
+.header > nav {
+  @apply flex justify-end items-center gap-x-[42px];
+}
+
+.header-nav-link {
+  @apply flex items-center gap-x-[9px] duration-400 ease-in-out;
+}
+
+.header-nav-link:hover > p {
+  @apply font-bold;
+}
+
+.header-nav-link:hover path {
+  @apply fill-[#0095FF];
+}
+
+.header-nav-link:active > p {
+  @apply text-[#0095FF] font-bold;
+}
+
+.header-nav-link:active path {
+  @apply fill-[#0095FF];
+}
+
+.header-nav-link > p {
+  @apply text-[18px] font-['Raleway'] font-normal uppercase duration-400 ease-in-out;
+}
+
+.header-nav-link > svg {
+  @apply w-[21px] h-[21px];
+}
+
+.header-nav-link path {
+  @apply duration-400 ease-in-out;
+}
+
+.header-logo {
+  @apply w-[66px] h-[66px];
+}
+

@@ -2,26 +2,31 @@ import React from 'react';
 
 import Link from 'next/link';
 
+import Button from '@/shared/Button';
+
+import '@/styles/widgets/joinUs.css';
+
 export default function JoinUs() {
   return (
-    <section className="relative grid gap-y-[76px] py-[56px] px-[119px] w-full h-auto bg-[#e5e5e5] rounded-[20px]">
-      <img src="/static/images/joinUs-image.svg" alt="" className="absolute right-[90px] top-[32px] w-[488px] h-[488px]"/>
+    <section className="joinUs">
+      <img src="/static/images/joinUs-image.svg" alt="" className="joinUs-decorationImage"/>
 
-      <h2 className="text-black text-[84px] text-left font-['Alientz'] font-normal uppercase z-10">присоединяйся</h2>
+      <h2 className="section-title light">присоединяйся</h2>
 
-      <div className="grid gap-y-[32px] pl-[89px] max-w-[683px]">
-        <p className="text-black text-[24px] text-left font-['Raleway'] font-normal">Хочешь участвовать в проектах, прокачивать навыки и 
+      <div className="joinUs-contentContainer">
+        <p className="joinUs-contentContainer-text">Хочешь участвовать в проектах, прокачивать навыки и 
           найти команду единомышленников? Расскажем, как устроено ИТС 
           и что нужно сделать, чтобы влиться.
         </p>
 
-        <Link href="">
-          <button className="flex justify-center items-center gap-x-[12px] py-[18px] px-[44px] bg-[#006CBC] rounded-[44px] cursor-pointer">
-            <p className="text-white text-[24px] font-['Raleway'] font-normal uppercase">хочу вступить</p>
-
-            <img src="/static/icon/arrow-right-icon.svg" alt="Иконка: стрелка" className="w-[24px] h-[28px]"/>
-          </button>
-        </Link>
+        <Button
+          type={'button-light'}
+          link={''}
+          text={'хочу вступить'}
+          icon={<svg width="24" height="27" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.954h18.682l-7.204-7.182L13.228 0l10.181 10.204-10.181 10.182-1.75-1.727 7.204-7.205H0z" fill="#fff"/></svg>  }
+          styles={'rounded-[44px]'}
+          textStyles={'text-[24px]'}
+        />
       </div>
     </section>
   )

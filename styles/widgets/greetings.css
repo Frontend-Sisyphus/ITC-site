@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+.greetings {
+  @apply relative flex justify-between items-start gap-x-[12px] pt-[79px] pb-[168px] pl-[96px] pr-[120px] overflow-hidden;
+}
+
+.greetings-left {
+  @apply grid gap-y-[58px];
+}
+
+.greetings-left-title {
+  @apply text-white text-[216px] text-left font-['Alientz'] font-normal uppercase leading-[72px];
+}
+
+.greetings-left-decorationLine {
+  @apply ml-[24px] w-[594px] h-[4px] bg-[#ffffff]; 
+}
+
+.greetings-right {
+  @apply flex flex-wrap gap-y-[16px] pt-[95px];
+}
+
+.greetings-right-title {
+  @apply text-white text-[42px] text-left font-['Raleway'] font-normal; 
+}
+
+.greetings-right-text {
+  @apply text-white text-[24px] font-['Raleway'] font-normal leading-[120%];
+}
+
+.greetings-right-buttonContainer {
+  @apply flex justify-start items-start h-[80px];
+}
+
+.greetings-decorationImage {
+  @apply absolute left-0 bottom-[100px] w-[632px] h-[448px];
+}

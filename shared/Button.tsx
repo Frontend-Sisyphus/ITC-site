@@ -4,14 +4,18 @@ import Link from 'next/link';
 
 import "@/styles/shared/button.css";
 
-export default function Button({link, text, icon, styles, textStyles}) {
+export default function Button({type, link, text, icon, styles, textStyles}) {
   return (
-    <Link href={link} className={`button ${styles}`}>
-      <button className="button-container">
-        <p className={`button-container-text ${textStyles}`}>{text}</p>
+    <Link href={link} className={`button ${type} ${styles}`}>
+      <div className="button-container">
+        <button className="button-container-content">
+          <p className={`button-container-content-text ${textStyles}`}>{text}</p>
 
-        {icon}
-      </button>
+          {icon}
+        </button>
+
+        <div className="button-container-shadow"/>
+      </div>
     </Link>
   )
 }

@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+.joinUs {
+  @apply relative grid gap-y-[76px] py-[56px] px-[119px] w-full h-auto bg-[#e5e5e5] rounded-[20px];
+}
+
+.joinUs-decorationImage {
+  @apply absolute right-[90px] top-[32px] w-[488px] h-[488px];
+}
+
+.joinUs-contentContainer {
+  @apply flex flex-wrap gap-y-[32px] pl-[89px] max-w-[683px];
+}
+
+.joinUs-contentContainer-text {
+  @apply text-black text-[24px] text-left font-['Raleway'] font-normal;
+}

@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+.findYourWay {
+  @apply relative grid gap-y-[76px];
+}
+
+.findYourWay-decorationImage {
+  @apply absolute top-[-370px] left-[-245px] w-[1021px] h-[1020px] z-[5];
+}
+
+.findYourWay-contentContainer {
+  @apply z-10;
+}
+
+.findYourWay-contentContainer-item {
+  @apply grid gap-y-[8px] py-[28px] px-[120px] bg-[#080808] border-y-[1px] border-white z-10;
+}
+
+.findYourWay-contentContainer-item-title {
+  @apply text-white text-[48px] font-['Raleway'] font-normal uppercase;
+}
+
+.findYourWay-contentContainer-item-description {
+  @apply max-w-[594px] text-white text-[24px] font-['Raleway'] font-normal leading-[120%];
+}

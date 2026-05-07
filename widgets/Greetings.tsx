@@ -4,51 +4,59 @@ import Link from 'next/link';
 
 import Button from '@/shared/Button';
 
+import '@/styles/widgets/greetings.css';
+
 export default function Greetings() {
   return (
-    <section className="relative flex justify-between items-start gap-x-[12px] pt-[79px] pl-[96px] pr-[120px] overflow-hidden">
-      <div className="grid gap-y-[58px]">
-        <h1 className="text-white text-[216px] text-left font-['Alientz'] font-normal uppercase leading-[72px]">ИТС</h1>
+    <section className="greetings">
+      <div className="greetings-left">
+        <h1 className="greetings-left-title">ИТС</h1>
 
-        <div className="ml-[24px] w-[594px] h-[4px] bg-[#ffffff]"/>
+        <div className="greetings-left-decorationLine"/>
       </div>
 
-      <div className="flex flex-wrap gap-y-[16px] pt-[95px]">
-        <h3 className="text-white text-[42px] text-left font-['Raleway'] font-normal">делаем проекты вместе</h3>
+      <div className="greetings-right">
+        <h3 className="greetings-right-title">делаем проекты вместе</h3>
       
-        <p className="text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">
+        <p className="greetings-right-text">
           Информационно-техническое сообщество Финуниверситета — 
           объединяем <br/>студентов, которые развиваются в IT, дизайне 
           и медиа через реальные задачи.
         </p>
 
-        <p className="text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">
+        <p className="greetings-right-text">
           Здесь можно войти в действующий проект, предложить свой 
           или собрать команду для хакатона.
         </p>
 
-        <Button 
-          link={""} 
-          text={"хочу вступить"} 
-          icon={
-            <img src="/static/icon/arrow-right-icon.svg" alt="Иконка: стрелка" className="w-[24px] h-[28px]"/>
-          }
-          styles={"rounded-[44px]"}
-          textStyles={"text-[24px]"}
-        />
+        <div className="greetings-right-buttonContainer">
+          <Button 
+            type={"dark"}
+            link={""} 
+            text={"хочу вступить"} 
+            icon={
+              <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.954h18.682l-7.204-7.182L13.228 0l10.181 10.204-10.181 10.182-1.75-1.727 7.204-7.205H0z" fill="#fff"/></svg>  
+            }
+            styles={" rounded-[44px]"}
+            textStyles={"text-[24px]"}
+          />
+        </div>
 
-        <Button 
-          link={""} 
-          text={"наши проекты"} 
-          icon={
-            <img src="/static/icon/arrow-right-icon.svg" alt="Иконка: стрелка" className="w-[24px] h-[28px]"/>
-          }
-          styles={"ml-[165px] rounded-[44px]"}
-          textStyles={"text-[24px]"}
-        />
+        <div className="greetings-right-buttonContainer">
+          <Button 
+            type={"dark"}
+            link={""} 
+            text={"наши проекты"} 
+            icon={
+              <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.954h18.682l-7.204-7.182L13.228 0l10.181 10.204-10.181 10.182-1.75-1.727 7.204-7.205H0z" fill="#fff"/></svg>
+            }
+            styles={"ml-[165px] rounded-[44px]"}
+            textStyles={"text-[24px]"}
+          />
+        </div>
       </div>
 
-      <img src="/static/images/greetings-image.svg" alt="" className="absolute left-0 bottom-[-68px] w-[632px] h-[448px]"/>
+      <img src="/static/images/greetings-image.svg" alt="" className="greetings-decorationImage"/>
     </section>
   )
 }

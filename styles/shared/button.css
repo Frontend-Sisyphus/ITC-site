@@ -1,13 +1,89 @@
 @import "tailwindcss";
 
 .button {
-  @apply relative inline-block p-[4px] border-[#9999999C] border-[1px] duration-400;
+  @apply block p-[1px] duration-400 ease-in-out;
 }
 
 .button-container {
-  @apply flex justify-center items-center gap-x-[8px] py-[16px] px-[40px] bg-[#FFFFFF0F] border-[#999999] border-[1px] rounded-[44px] cursor-pointer;
+  @apply relative flex justify-center items-center gap-x-[8px] bg-[#080808] rounded-[60px] cursor-pointer duration-400 ease-in-out;
 }
 
-.button-container-text {
+.button-container-shadow {
+  @apply absolute right-[54px] w-[54px] h-[54px] bg-[#38aaff] rounded-[100%] drop-shadow-[48px_5px_41.5px_#38aaff] z-1 duration-400 ease-in-out invisible;
+}
+
+.button-container-content {
+  @apply flex justify-center items-center py-[16px] px-[40px] rounded-[44px] cursor-pointer z-5;
+}
+
+.button-container-content-text {
   @apply text-white font-['Raleway'] font-normal uppercase;
+}
+
+.button-dark {
+  @apply bg-[linear-gradient(90deg,rgba(153,153,153,0.1647)_0%,rgba(255,255,255,0.27)_98.56%)];
+}
+
+.button-dark > .button-container {
+  @apply p-[4px];
+}
+
+.button-dark .button-container-content {
+  @apply gap-x-[8px] bg-[#161616] border-[#999999] border-[1px];
+}
+
+.button-dark:hover .button-container-content path {
+  @apply duration-400 ease-in-out;
+}
+
+.button-dark:hover {
+  @apply bg-[linear-gradient(260.65deg,#38AAFF_-11.31%,rgba(153,153,153,0)_96.53%)];
+}
+
+.button-dark:hover > .button-container {
+  @apply p-[0px] rounded-[44px];
+}
+
+.button-dark:hover .button-container-shadow {
+  @apply visible;
+}
+
+.button-dark:hover .button-container-content {
+  @apply border-[0px];
+}
+
+.button-dark:hover .button-container-content path {
+  @apply fill-[#098ced];
+}
+
+.button-dark:hover .button-container-content path {
+  @apply duration-400 ease-in-out;
+}
+
+.button-dark:active {
+  @apply bg-[linear-gradient(260.65deg,#38AAFF_-11.31%,rgba(153,153,153,0)_96.53%)];
+}
+
+.button-dark:active > .button-container {
+  @apply p-[4px] rounded-[60px];
+}
+
+.button-dark:active .button-container-content {
+  @apply border-[1px] border-[#999999];
+}
+
+.button-dark:active .button-container-content path {
+  @apply fill-[#098ced];
+}
+
+.button-light {
+  @apply bg-transparent;
+}
+
+.button-light > .button-container {
+  @apply bg-[#006CBC];
+}
+
+.button-light .button-container-content {
+  @apply gap-x-[12px] border-[0px];
 }

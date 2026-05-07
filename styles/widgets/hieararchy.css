@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.hierarchy {
+  @apply relative grid gap-y-[10px] px-[120px];
+}
+
+.hierarchy-decorationImage {
+  @apply absolute top-[-118px] left-[-20px] w-[572px] h-[572px] z-5;
+}
+
+.hierarchy-contentContainer {
+  @apply grid gap-y-[4px] z-10;
+}
+
+.hierarchy-contentContainer-item {
+  @apply p-[2px] w-full bg-[linear-gradient(180deg,#098CED_0%,rgba(5,80,135,0)_100%)] rounded-t-[24px] overflow-hidden;
+}
+
+.hierarchy-contentContainer-item-wrapper {
+  @apply flex justify-between items-center py-[36px] pl-[24px] pr-[75px] bg-[#080808] rounded-t-[24px];
+}
+
+.hierarchy-contentContainer-item-wrapper-content {
+  @apply grid gap-y-[96px];
+}
+
+.hierarchy-contentContainer-item-wrapper-content-title {
+  @apply text-white text-[48px] text-left font-['Raleway'] font-normal uppercase;
+}
+
+.hierarchy-contentContainer-item-wrapper-content-description {
+  @apply max-w-[570px] text-white text-[24px] text-left font-['Raleway'] font-normal leading-[120%];
+}

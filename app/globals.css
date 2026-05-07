@@ -22,3 +22,15 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.section-title {
+  @apply text-[82px] text-left font-['Alientz'] font-normal leading-[96px] uppercase z-10;
+}
+
+.dark {
+  @apply text-white;
+}
+
+.light {
+  @apply text-black;
+}

@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+.community {
+  @apply relative grid gap-y-[76px] px-[120px] pb-[148px] overflow-hidden;
+}
+
+.community-textContainer {
+  @apply flex justify-start items-start gap-x-[101px]; 
+}
+
+.community-textContainer-text {
+  @apply text-white text-[24px] text-left font-['Raleway'] font-normal leading-[120%];
+}
+
+.community-decorationImage {
+  @apply absolute top-[85px] right-[-275px] w-[686px] h-[686px] z-[5];
+}

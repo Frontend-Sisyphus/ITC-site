@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+.quote {
+  @apply relative py-[168px] px-[120px] overflow-hidden;
+}
+
+.quote-decorationImage {
+  @apply absolute top-[70px] right-[-60px] w-[632px] h-[448px];
+}
+
+.quote-text {
+  @apply h-[56px] text-white text-[48px] text-left font-['Raleway'] font-light;
+}
