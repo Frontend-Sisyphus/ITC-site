@@ -1,17 +1,33 @@
 @import 'tailwindcss';
 
 .community {
-  @apply relative grid gap-y-[76px] px-[120px] pb-[148px] overflow-hidden;
+  @apply relative grid gap-y-[76px] px-[120px] pb-[148px] overflow-x-hidden;
+
+  @media (max-width: 480px) {
+    @apply gap-y-[19px] px-[28px] py-[105px] overflow-y-visible;
+  }
 }
 
 .community-textContainer {
   @apply flex justify-start items-start gap-x-[101px]; 
+
+  @media (max-width: 480px) {
+    @apply grid gap-x-[0px] gap-y-[19px]; 
+  }
 }
 
 .community-textContainer-text {
   @apply text-white text-[24px] text-left font-['Raleway'] font-normal leading-[120%];
+
+  @media (max-width: 480px) {
+    @apply text-[14px];
+  }
 }
 
 .community-decorationImage {
   @apply absolute top-[85px] right-[-275px] w-[686px] h-[686px] z-[5];
+
+  @media (max-width: 480px) {
+    @apply top-[-25px] right-[-65px] w-[250px] h-[250px]
+  }
 }

@@ -2,32 +2,66 @@
 
 .hierarchy {
   @apply relative grid gap-y-[10px] px-[120px];
+
+  @media (max-width: 480px) {
+    @apply justify-stretch px-[28px];
+  }
 }
 
 .hierarchy-decorationImage {
   @apply absolute top-[-118px] left-[-20px] w-[572px] h-[572px] z-5;
+
+  @media (max-width: 480px) {
+    @apply hidden;
+  }
 }
 
 .hierarchy-contentContainer {
-  @apply grid gap-y-[4px] z-10;
+  @apply grid gap-y-[4px] w-full z-10;
 }
 
 .hierarchy-contentContainer-item {
   @apply p-[2px] w-full bg-[linear-gradient(180deg,#098CED_0%,rgba(5,80,135,0)_100%)] rounded-t-[24px] overflow-hidden;
+
+  @media (max-width: 480px) {
+    @apply p-[1px] rounded-t-[12px] overflow-hidden;
+  }
 }
 
 .hierarchy-contentContainer-item-wrapper {
-  @apply flex justify-between items-center py-[36px] pl-[24px] pr-[75px] bg-[#080808] rounded-t-[24px];
+  @apply relative flex justify-between items-center py-[36px] pl-[24px] pr-[75px] bg-[#080808] rounded-t-[24px];
+
+  @media (max-width: 480px) {
+    @apply grid justify-stretch gap-y-[70px] pt-[28px] pb-[70px] pl-[28px] pr-[28px] rounded-t-[12px];
+  }
+}
+
+.hierarchy-contentContainer-item-wrapper > img {
+  @media (max-width: 480px) {
+    @apply justify-self-center;
+  }
 }
 
 .hierarchy-contentContainer-item-wrapper-content {
-  @apply grid gap-y-[96px];
+  @apply relative grid gap-y-[96px];
+
+  @media (max-width: 480px) {
+    @apply gap-y-[40px] w-full;
+  }
 }
 
 .hierarchy-contentContainer-item-wrapper-content-title {
   @apply text-white text-[48px] text-left font-['Raleway'] font-normal uppercase;
+
+  @media (max-width: 480px) {
+    @apply text-[18px];
+  }
 }
 
 .hierarchy-contentContainer-item-wrapper-content-description {
   @apply max-w-[570px] text-white text-[24px] text-left font-['Raleway'] font-normal leading-[120%];
+
+  @media (max-width: 480px) {
+    @apply max-w-[270px] text-[14px];
+  }
 }

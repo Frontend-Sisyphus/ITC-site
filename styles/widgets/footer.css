@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 .footer {
-  @apply flex justify-between items-start mt-[56px] pb-[83px] px-[120px] w-full;
+  @apply relative flex justify-between items-start mt-[56px] pb-[83px] px-[120px] w-full;
+
+  @media (max-width: 480px) {
+    @apply grid justify-center gap-y-[24px] pb-[74px] px-[28px];
+  }
 }
 
 .footer-left {
@@ -10,6 +14,10 @@
 
 .footer-left-logoContainer {
   @apply flex items-end gap-x-[24px];
+
+  @media (max-width: 480px) {
+    @apply justify-between;
+  }
 }
 
 .footer-left-logoContainer > img:first-child {
@@ -22,10 +30,18 @@
 
 .footer-left-linksContainer {
   @apply grid gap-y-[8px];
+
+  @media (max-width: 480px) {
+    @apply justify-center gap-y-[12px];
+  }
 }
 
 .footer-left-linksContainer-link {
   @apply text-[#ffffff] text-[18px] text-left font-['Raleway'] underline duration-400 ease-in-out;
+
+  @media (max-width: 480px) {
+    @apply text-[14px] text-center;
+  }
 }
 
 .footer-left-linksContainer-link:hover {
@@ -34,8 +50,16 @@
 
 .footer-copyright {
   @apply self-end text-[#ffffff] text-[18px] text-center font-['Raleway'] font-normal;
+
+  @media (max-width: 480px) {
+    @apply absolute bottom-[24px] w-full text-[14px];
+  }
 }
 
 .footer-right {
   @apply grid justify-items-end gap-y-[8px];
+
+  @media (max-width: 480px) {
+    @apply justify-center justify-items-center gap-y-[14px];
+  }
 }

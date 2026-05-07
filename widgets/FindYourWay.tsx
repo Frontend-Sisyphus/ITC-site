@@ -7,7 +7,7 @@ export default function FindYourWay() {
     <section className="findYourWay">
       <img src="/static/images/findYourWay-image.svg" alt="" className="findYourWay-decorationImage"/>
 
-      <h2 className="px-[120px] section-title dark">найди своё направление</h2>
+      <h2 className="section-title dark">найди своё направление</h2>
     
       <div className="findYourWay-contentContainer">
         <div className="findYourWay-contentContainer-item">

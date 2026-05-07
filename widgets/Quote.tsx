@@ -9,9 +9,9 @@ export default function Quote() {
 
       <p className="quote-text">Проект — это правильное решение.</p>
 
-      <p className="pl-[223px] quote-text">В нужном месте.</p>
+      <p className="quote-text">В нужном месте.</p>
     
-      <p className="pl-[489px] quote-text">В нужное время.</p>
+      <p className="quote-text">В нужное время.</p>
     </section>
   )
 }

@@ -2,12 +2,40 @@
 
 .quote {
   @apply relative py-[168px] px-[120px] overflow-hidden;
+
+  @media (max-width: 480px) {
+    @apply pt-[105px] pb-[45px] px-[28px];
+  }
 }
 
 .quote-decorationImage {
-  @apply absolute top-[70px] right-[-60px] w-[632px] h-[448px];
+  @apply absolute top-[105px] right-[-80px] w-[632px] h-[428px];
+
+  @media (max-width: 480px) {
+    @apply top-0;
+  }
 }
 
 .quote-text {
   @apply h-[56px] text-white text-[48px] text-left font-['Raleway'] font-light;
+
+  @media (max-width: 480px) {
+     @apply h-[32px] text-[18px];
+  }
+}
+
+.quote-text:nth-child(3) {
+  @apply pl-[223px];
+
+  @media (max-width: 480px) {
+    @apply pl-[83px];
+  }
+}
+
+.quote-text:nth-child(4) {
+  @apply pl-[489px];
+
+  @media (max-width: 480px) {
+    @apply pl-[179px];
+  }
 }

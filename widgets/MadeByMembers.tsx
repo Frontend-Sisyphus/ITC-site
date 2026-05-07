@@ -1,56 +1,58 @@
 import React from 'react';
 
-import Button from "@/shared/Button";
+import Button from '@/shared/Button';
+
+import '@/styles/widgets/madeByMembers.css';
 
 export default function MadeByMembers() {
   return (
-    <section className="py-[167px] px-[120px]">
-      <h2 className="text-white text-[84px] text-left font-['Alientz'] font-normal uppercase leading-[96px]">сделано участниками ИТС</h2>
+    <section className="madeByMembers">
+      <h2 className="section-title">сделано участниками ИТС</h2>
 
-      <div className="flex items-start gap-x-[34px] pt-[76px] w-full">
-        <div className="relative grid gap-y-[70px]">
-          <div className="relative grid gap-y-[12px]">
-            <h3 className="pl-[94px] text-white text-[24px] font-['Raleway'] font-normal uppercase">telegram-бот "помощник"</h3>
+      <div className="madeByMembers-contentContainer">
+        <div className="madeByMembers-contentContainer-left">
+          <div className="madeByMembers-contentContainer-left-topItem">
+            <h3 className="madeByMembers-contentContainer-left-topItem-title">telegram-бот "помощник"</h3>
 
-            <p className="pl-[94px] max-w-[488px] text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">Удобный бот с актуальным расписанием. Им уже пользуется [число] студентов.</p>
+            <p className="madeByMembers-contentContainer-left-topItem-description">Удобный бот с актуальным расписанием. Им уже пользуется [число] студентов.</p>
 
-            <img src="/static/images/phones-image.svg" alt="" className="mt-[-70px] w-[594px] h-[594px] z-5"/>
+            <img src="/static/images/phones-image.svg" alt="" className="madeByMembers-contentContainer-left-topItem-image"/>
           
-            <Button link={""} text={"перейти в бота"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"absolute bottom-[20px] right-0 max-w-[274px] rounded-[60px]"} textStyles={"text-[18px]"}/>
+            <Button type={'button-dark'} link={""} text={"перейти в бота"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"absolute bottom-[20px] right-0 max-w-[274px] rounded-[60px]"} textStyles={"text-[18px]"}/>
           </div>
 
-          <div className="grid gap-y-[12px]">
-            <img src="/static/images/education-image.svg" alt="" className="w-[537px] h-[257px] z-5"/>
+          <div className="madeByMembers-contentContainer-left-bottomItem">
+            <img src="/static/images/education-image.svg" alt="" className="madeByMembers-contentContainer-left-bottomItem-image"/>
 
-            <h3 className="pl-[94px] max-w-[488px] text-white text-[24px] font-['Raleway'] font-normal uppercase">Образовательный канал «ИТС Публикации»</h3>
+            <h3 className="madeByMembers-contentContainer-left-bottomItem-title">Образовательный канал «ИТС Публикации»</h3>
 
-            <p className="pl-[94px] max-w-[488px] text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">
+            <p className="madeByMembers-contentContainer-left-bottomItem-description">
               Разбираем IT-темы простым языком. Участники медианаправления 
               ИТС пишут статьи, делают обложки и рассказывают о сложном так, 
               что хочется пробовать самому.
             </p>
 
-            <Button link={""} text={"будь в курсе"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"mt-[12px] ml-[94px] max-w-[247px] rounded-[60px]"} textStyles={"text-[18px]"}/>
+            <Button type={"button-dark"} link={""} text={"будь в курсе"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"mt-[12px] ml-[94px] max-w-[247px] rounded-[60px]"} textStyles={"text-[18px]"}/>
           </div>
         </div>
 
-        <div className="grid gap-y-[32px]">
-          <div className="grid gap-y-[12px]">
-            <img src="/static/images/hackaton-image.svg" alt="" className="w-[493px] h-[356px] z-5"/>
+        <div className="madeByMembers-contentContainer-right">
+          <div className="madeByMembers-contentContainer-right-topItem">
+            <img src="/static/images/hackaton-image.svg" alt="" className="madeByMembers-contentContainer-right-topItem-image"/>
 
-            <h3 className="mt-[12px] max-w-[493px] text-white text-[24px] font-['Raleway'] font-normal uppercase">победа в хакатоне по разработке для мессенджера MAX</h3>
+            <h3 className="madeByMembers-contentContainer-right-topItem-title">победа в хакатоне по разработке для мессенджера MAX</h3>
 
-            <p className="max-w-[493px] text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">
+            <p className="madeByMembers-contentContainer-right-topItem-description">
               В треке «Цифровизация» с решением «Цифровой кампус»
             </p>
           </div>
 
-          <div className="grid gap-y-[12px]">
-            <img src="/static/images/university-image.svg" alt="" className="w-[493px] h-[328px] z-5"/>
+          <div className="madeByMembers-contentContainer-right-bottomItem">
+            <img src="/static/images/university-image.svg" alt="" className="madeByMembers-contentContainer-right-bottomItem-image"/>
 
-            <h3 className="mt-[12px] max-w-[493px] text-white text-[24px] font-['Raleway'] font-normal uppercase">Нас знают не только в вузе</h3>
+            <h3 className="madeByMembers-contentContainer-right-bottomItem-title">Нас знают не только в вузе</h3>
 
-            <p className="max-w-[493px] text-white text-[24px] font-['Raleway'] font-normal leading-[120%]">
+            <p className="madeByMembers-contentContainer-right-bottomItem-description">
               Наши проекты и участники выступают на разных уровнях — 
               от Дней открытых дверей до международных конференций. 
               Показываем разработки, общаемся с экспертами и доказываем, 
@@ -59,6 +61,55 @@ export default function MadeByMembers() {
               (с роботом на голосовом управлении)<br/>— Конференции «Форсайт образования» 
             </p>
           </div>
+        </div>
+
+        <div className="madeByMembers-contentContainer-firstItem">
+          <h3 className="madeByMembers-contentContainer-firstItem-title">telegram-бот "помощник"</h3>
+
+          <p className="madeByMembers-contentContainer-firstItem-description">Удобный бот с актуальным расписанием. Им уже пользуется [число] студентов.</p>
+
+          <img src="/static/images/phones-mobile-image.svg" alt="" className="madeByMembers-contentContainer-firstItem-image"/>
+        
+          <Button type={'button-dark'} link={""} text={"перейти в бота"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={""} textStyles={"text-[18px]"}/>
+        </div>
+
+        <div className="madeByMembers-contentContainer-secondItem">
+          <h3 className="madeByMembers-contentContainer-secondItem-title">победа в хакатоне по разработке для мессенджера MAX</h3>
+
+          <p className="madeByMembers-contentContainer-secondItem-description">
+            В треке «Цифровизация»<br/> с решением «Цифровой кампус»
+          </p>
+
+          <img src="/static/images/hackaton-image.svg" alt="" className="madeByMembers-contentContainer-secondItem-image"/>
+        </div>
+
+        <div className="madeByMembers-contentContainer-thirdItem">
+          <img src="/static/images/education-mobile-image.svg" alt="" className="madeByMembers-contentContainer-thirdItem-image"/>
+
+          <h3 className="madeByMembers-contentContainer-thirdItem-title">Образовательный канал <br/>«ИТС Публикации»</h3>
+
+          <p className="madeByMembers-contentContainer-thirdItem-description">
+            Разбираем IT-темы простым языком. Участники медианаправления 
+            ИТС пишут статьи, делают обложки и рассказывают о сложном так, 
+            что хочется пробовать самому.
+          </p>
+
+          <Button type={"button-dark"} link={""} text={"будь в курсе"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={""} textStyles={"text-[18px]"}/>
+        </div>
+
+        <div className="madeByMembers-contentContainer-fourthItem">
+          <h3 className="madeByMembers-contentContainer-fourthItem-title">Нас знают не только в вузе</h3>
+
+          <p className="madeByMembers-contentContainer-fourthItem-description">
+            Наши проекты и участники выступают на разных уровнях — 
+            от Дней открытых дверей до международных конференций. 
+            Показываем разработки, общаемся с экспертами и доказываем, 
+            что студенческие IT-проекты могут влиять на повестку образования.<br/><br/>
+            Были на: <br/>— Дне открытых дверей Финуниверситета<br/>— Дне науки 
+            (с роботом на голосовом управлении)<br/>— Конференции «Форсайт образования» 
+          </p>
+
+          <img src="/static/images/university-image.svg" alt="" className="madeByMembers-contentContainer-fourthItem-image"/>
         </div>
       </div>
     </section>

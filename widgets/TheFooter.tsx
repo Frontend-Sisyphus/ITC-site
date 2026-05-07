@@ -27,9 +27,9 @@ export default function TheFooter() {
       <p className="footer-copyright">© ИТС {new Date().getFullYear()}</p>
 
       <div className="footer-right">
-        <Button link={""} text={"ИТС публикации"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"rounded-[44px]"} textStyles={"text-[18px]"}/>
+        <Button type={'button-dark'} link={""} text={"ИТС публикации"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"rounded-[44px]"} textStyles={"text-[18px]"}/>
 
-        <Button link={""} text={"Бот помощник"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"rounded-[44px]"} textStyles={"text-[18px]"}/>
+        <Button type={'button-dark'} link={""} text={"Бот помощник"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"rounded-[44px]"} textStyles={"text-[18px]"}/>
       </div>
     </footer>
   )

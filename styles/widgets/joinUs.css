@@ -2,16 +2,44 @@
 
 .joinUs {
   @apply relative grid gap-y-[76px] py-[56px] px-[119px] w-full h-auto bg-[#e5e5e5] rounded-[20px];
+
+  @media (max-width: 480px) {
+    @apply gap-y-[26px] py-[28px] px-[28px] rounded-[15px] overflow-hidden;
+  }
 }
 
 .joinUs-decorationImage {
-  @apply absolute right-[90px] top-[32px] w-[488px] h-[488px];
+  @apply absolute right-[90px] top-[32px] w-[488px] h-[488px] z-5;
+
+  @media (max-width: 480px) {
+    @apply right-[-50px] top-[38px] w-[288px] h-[288px];
+  }
 }
 
 .joinUs-contentContainer {
-  @apply flex flex-wrap gap-y-[32px] pl-[89px] max-w-[683px];
+  @apply flex flex-wrap gap-y-[32px] pl-[89px] max-w-[683px] z-10;
+
+  @media (max-width: 480px) {
+    @apply pl-0 max-w-full;
+  }
 }
 
 .joinUs-contentContainer-text {
   @apply text-black text-[24px] text-left font-['Raleway'] font-normal;
+
+  @media (max-width: 480px) {
+    @apply text-[18px];
+  }
+}
+
+.joinUs button {
+  @apply rounded-[44px];
+}
+
+.joinUs button > p {
+  @apply text-[24px];
+
+  @media (max-width: 480px) {
+    @apply text-[18px];
+  }
 }

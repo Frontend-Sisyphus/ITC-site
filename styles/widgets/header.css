@@ -2,6 +2,10 @@
 
 .header {
   @apply relative flex justify-end items-center gap-x-[84px] pt-[20px] pr-[120px] w-full h-[53px] bg-transparent;
+
+  @media (max-width: 480px) {
+    @apply justify-between gap-x-[0px] pt-[53px] px-[28px] h-[80px];
+  }
 }
 
 .header > nav {
@@ -30,6 +34,10 @@
 
 .header-nav-link > p {
   @apply text-[18px] font-['Raleway'] font-normal uppercase duration-400 ease-in-out;
+
+  @media (max-width: 480px) {
+    @apply text-[14px];
+  }
 }
 
 .header-nav-link > svg {
@@ -42,5 +50,8 @@
 
 .header-logo {
   @apply w-[66px] h-[66px];
-}
 
+  @media (max-width: 480px) {
+    @apply w-[59px] h-[32px];
+  }
+}
