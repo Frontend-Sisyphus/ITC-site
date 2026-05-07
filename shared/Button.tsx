@@ -4,7 +4,16 @@ import Link from 'next/link';
 
 import "@/styles/shared/button.css";
 
-export default function Button({type, link, text, icon, styles, textStyles}) {
+interface ButtonProps {
+  type: string;        
+  link: string;
+  text: string;
+  icon?: React.ReactNode;  
+  styles?: string;        
+  textStyles?: string;     
+}
+
+export default function Button({type, link, text, icon, styles, textStyles}: ButtonProps) {
   return (
     <Link href={link} className={`button ${type} ${styles}`}>
       <div className="button-container">

@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 .greetings {
-  @apply relative flex justify-between items-start gap-x-[12px] pt-[79px] pb-[168px] pl-[96px] pr-[120px] overflow-hidden;
+  @apply relative flex justify-between items-start gap-x-[12px] pt-[79px] pb-[98px] pl-[96px] pr-[120px] overflow-hidden;
 
   @media (max-width: 480px) {
     @apply flex-wrap gap-x-[9px] pt-[39px] pb-0 pl-0 pr-[27px];
@@ -91,7 +91,11 @@
 }
 
 .greetings-mobileBottom {
-  @apply grid gap-y-[19px] pt-[19px];
+  @apply hidden gap-y-[19px] pt-[19px];
+
+  @media (max-width: 480px) {
+    @apply grid;
+  }
 }
 
 .greetings-mobileBottom > .greetings-mobileBottom-text:first-child {

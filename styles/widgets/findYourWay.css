@@ -9,10 +9,10 @@
 }
 
 .findYourWay .section-title {
-  @apply px-[120px];
+  @apply px-[120px] text-right;
 
   @media (max-width: 480px) {
-    @apply px-[28px] text-right;
+    @apply px-[28px];
   }
 }
 

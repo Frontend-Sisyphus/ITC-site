@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 .community {
-  @apply relative grid gap-y-[76px] px-[120px] pb-[148px] overflow-x-hidden;
+  @apply relative grid gap-y-[76px] px-[120px] pt-[70px] pb-[148px] overflow-x-hidden;
 
   @media (max-width: 480px) {
     @apply gap-y-[19px] px-[28px] py-[105px] overflow-y-visible;

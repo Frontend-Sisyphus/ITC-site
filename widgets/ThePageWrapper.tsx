@@ -3,7 +3,11 @@ import React from 'react'
 import TheHeader from './TheHeader';
 import TheFooter from './TheFooter';
 
-function ThePageWrapper({children}) {
+interface PageWrapperProps {
+  children: React.ReactNode;
+}
+
+function ThePageWrapper({children}: PageWrapperProps) {
   return (
     <>
       <TheHeader/>

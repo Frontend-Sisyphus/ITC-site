@@ -120,7 +120,11 @@
 .madeByMembers-contentContainer-secondItem,
 .madeByMembers-contentContainer-thirdItem,
 .madeByMembers-contentContainer-fourthItem {
-  @apply relative grid gap-y-[12px];
+  @apply relative hidden gap-y-[12px];
+
+  @media (max-width: 480px) {
+    @apply grid;
+  }
 }
 
 .madeByMembers-contentContainer-firstItem-title {
