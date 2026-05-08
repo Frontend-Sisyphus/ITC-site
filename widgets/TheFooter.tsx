@@ -24,7 +24,13 @@ export default function TheFooter() {
         </div>
       </div>
 
-      <p className="footer-copyright">© ИТС {new Date().getFullYear()}</p>
+      <div className="footer-bottom">
+        <p className="footer-bottom-copyright">© ИТС {new Date().getFullYear()}</p>
+
+        <hr className="footer-bottom-divisionLine"/>
+
+        <p className="footer-bottom-author">made by <a href="https://t.me/SisyphusOfFrontend">@frontend-sisyphus</a></p>  
+      </div>
 
       <div className="footer-right">
         <Button type={'button-dark'} link={""} text={"ИТС публикации"} icon={<img src="/static/icon/tg-icon.svg" alt="Логотип: Telegram" className="w-[21px] h-[21px]"/>} styles={"rounded-[44px]"} textStyles={"text-[18px]"}/>
